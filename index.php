@@ -1,4 +1,7 @@
 
+<?php
+    require "informations.php" ;
+ ?>
       <!--  start header -->
       <?php
         include "header.php";
@@ -17,7 +20,7 @@
               <div class="row">
 
 
-                  
+
 
 
                 <div class="card" style="width: 20rem;">

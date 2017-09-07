@@ -16,13 +16,17 @@
     </head>
     <body>
       <header>
-    <h1>Titre commun à tout le site</h1>
-
-
-
   <div class="jumbotron">
-    <h1 class="display-3 text-center">Hello, Site Ecommerce!</h1>
-    <p class="lead text-center">Tous nos produits sont périmés.</p>
+    <h1 class="display-3 text-center">
+      <?php
+    
+        echo $info['h1'];
+
+
+       ?>
+    </h1>
+    <p class="lead text-center"> <?php
+     echo $info['description'];?></p>
     <hr class="my-4">
 
   </div>
