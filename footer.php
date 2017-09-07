@@ -1,3 +1,12 @@
+
+
+<div class="jumbotron">
+  <h2 class="display-3">Merci!</h2>
+
+</div>
+
+
+
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>

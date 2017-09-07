@@ -17,10 +17,13 @@
     <body>
       <header>
     <h1>Titre commun à tout le site</h1>
-    <nav>
-      <ul>
-        <li><a href="index.php">Accueil</a></li>
-        <li><a href="contact.php">Contact</a></li>
-      </ul>
-    </nav>
+
+
+
+  <div class="jumbotron">
+    <h1 class="display-3 text-center">Hello, Site Ecommerce!</h1>
+    <p class="lead text-center">Tous nos produits sont périmés.</p>
+    <hr class="my-4">
+
+  </div>
   </header>
