@@ -1,6 +1,7 @@
 
 <?php
     require "informations.php" ;
+    require"description.php";
  ?>
       <!--  start header -->
       <?php
@@ -18,20 +19,22 @@
 
           <div class="container">
               <div class="row">
-
-
-
-
-
-                <div class="card" style="width: 20rem;">
-                  <img class="card-img-top img-fluid" src="capote.jpg" alt="Card image cap">
-                  <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-
+                
+<?php
+  foreach ($description as $key => $value) {
+  ?>
+                <!-- card -->
+      <div class="card" style="width: 20rem;">
+          <img class="card-img-top img-fluid" src="<?php echo $value['img']; ?>" alt="<?php echo $value['alt']; ?>">
+            <div class="card-block">
+                <h4 class="card-title"> <?php   echo $value['titre']; ?></h4>
+                  <p class="card-text"><?php echo $value['description']; ?></p>
+                  <a href="infoArticle.php?titre=<?php echo $value['titre']; ?>&amp;img=<?php echo $value['img']; ?>&amp;description=<?php echo $value['description']; ?>" class="btn btn-danger">Go somewhere</a>
+            </div>
+      </div>
+<?php
+  }
+ ?>
 </div>
 </div>
         <!-- end body -->

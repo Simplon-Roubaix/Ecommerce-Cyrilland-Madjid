@@ -19,14 +19,14 @@
   <div class="jumbotron">
     <h1 class="display-3 text-center">
       <?php
-    
         echo $info['h1'];
-
-
        ?>
     </h1>
-    <p class="lead text-center"> <?php
-     echo $info['description'];?></p>
+
+    <h2 class="lead text-center"> <?php
+     echo $info['description'];?>
+   </h2>
+
     <hr class="my-4">
 
   </div>

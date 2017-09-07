@@ -1,7 +1,7 @@
 
 
 <div class="jumbotron">
-  <h2 class="display-3 text-center ">Merci<br> <?php echo $info['auteur'][0];?> et <?php echo $info['auteur'][1] ?> </h2>
+  <h4 class="display-5 text-center ">Merci<br> <?php echo $info['auteur'][0];?> et <?php echo $info['auteur'][1] ?> </h4>
 
 </div>
 
