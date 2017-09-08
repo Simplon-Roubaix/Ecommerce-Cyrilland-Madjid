@@ -13,21 +13,21 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
+  </head>
     <body>
       <header>
-  <div class="jumbotron">
-    <h1 class="display-3 text-center">
-      <?php
-        echo $info['h1'];
-       ?>
-    </h1>
+        <div class="jumbotron">
+          <h1 class="display-3 text-center">
+            <?php
+               echo $info['h1'];
+            ?>
+          </h1>
 
-    <h2 class="lead text-center"> <?php
-     echo $info['description'];?>
-   </h2>
+          <h2 class="lead text-center"> <?php
+            echo $info['description'];?>
+          </h2>
 
-    <hr class="my-4">
+          <hr class="my-4">
 
-  </div>
-  </header>
+        </div>
+      </header>

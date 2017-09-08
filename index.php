@@ -19,7 +19,7 @@
 
           <div class="container">
               <div class="row">
-                
+
 <?php
   foreach ($description as $key => $value) {
   ?>
@@ -29,7 +29,8 @@
             <div class="card-block">
                 <h4 class="card-title"> <?php   echo $value['titre']; ?></h4>
                   <p class="card-text"><?php echo $value['description']; ?></p>
-                  <a href="infoArticle.php?titre=<?php echo $value['titre']; ?>&amp;img=<?php echo $value['img']; ?>&amp;description=<?php echo $value['description']; ?>" class="btn btn-danger">Go somewhere</a>
+                  
+                  <a href="infoArticle.php?titre=<?php echo $value['titre']; ?>&amp;img=<?php echo $value['img']; ?>&amp;description=<?php echo $value['description']; ?>" class="btn btn-danger">Clito</a>
             </div>
       </div>
 <?php
