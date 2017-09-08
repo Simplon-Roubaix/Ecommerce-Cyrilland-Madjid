@@ -11,11 +11,11 @@ $article = $_GET['article'];
   		<div class="container">
 			<div class="row">
 
-  				<div class="col-lg-3">
+  				<div class="col-lg-4">
   					<img class="card-img-top " src="<?php echo $description[$article]['img'];?>" alt="Jeux">
   				</div>
 
-  				<div class="col-lg-7">
+  				<div class="col-lg-8">
   					<div class="card-block ">
     					<p class="card-text ">
                 <?php echo $description[$article]['jeux'];?>
