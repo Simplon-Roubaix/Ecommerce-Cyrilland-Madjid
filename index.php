@@ -2,6 +2,7 @@
 <?php
     require "informations.php" ;
     require"description.php";
+
  ?>
       <!--  start header -->
       <?php
@@ -29,11 +30,12 @@
             <div class="card-block">
                 <h4 class="card-title"> <?php   echo $value['titre']; ?></h4>
                   <p class="card-text"><?php echo $value['description']; ?></p>
-                  
+
                   <a href="infoArticle.php?titre=<?php echo $value['titre']; ?>&amp;img=<?php echo $value['img']; ?>&amp;description=<?php echo $value['description']; ?>" class="btn btn-danger">Clito</a>
             </div>
       </div>
 <?php
+
   }
  ?>
 </div>
