@@ -1,12 +1,28 @@
+<?php 
+include "header.php";
+ ?>
 
 <article class="card">
   	<h1><?php echo $_GET['titre']; ?></h1>
+
+
   		<div class="container">
-  			<div class="row">
-  				<img class="card-img-top col-lg-4" src="<?php echo $_GET['img'];?>" alt="preservatif">
-  			<div class="card-block">
-    			<p class="card-text col-lg-8">Le plaisir commence ici.</p>
-  			</div>
+			<div class="row">
+
+  				<div class="col-lg-3">
+  					<img class="card-img-top " src="<?php echo $_GET['img'];?>" alt="preservatif">
+  				</div>
+
+  				<div class="col-lg-7">
+  					<div class="card-block ">
+    					<p class="card-text ">Le plaisir commence ici.</p>
+  					</div>
+  				</div>
+
   			</div>
   		</div>
 </article>
+
+<?php 
+include "footer.php";
+ ?>
