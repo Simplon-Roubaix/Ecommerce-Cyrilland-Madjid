@@ -31,7 +31,7 @@
                 <h4 class="card-title"> <?php   echo $value['titre']; ?></h4>
                   <p class="card-text"><?php echo $value['description']; ?></p>
 
-                  <a href="infoArticle.php?titre=<?php echo $value['titre']; ?>&amp;img=<?php echo $value['img']; ?>&amp;description=<?php echo $value['description']; ?>" class="btn btn-danger">Clito</a>
+                  <a href="infoArticle.php?titre=<?php echo $value['titre']; ?>&amp;img=<?php echo $value['img']; ?>&amp;description=<?php echo $value['description']; ?>" class="btn btn-danger">Apperçue</a>
             </div>
       </div>
 <?php
