@@ -1,4 +1,4 @@
-# Ecommerce-Cyrilland-Madjid
+# Ecommerce-Cyril-and-Madjid
 réaliserez un petit site e-commerce
 
 Projet binôme :
