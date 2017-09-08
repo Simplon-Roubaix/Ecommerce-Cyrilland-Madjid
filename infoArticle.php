@@ -1,21 +1,25 @@
 <?php 
 include "header.php";
+include "description.php";
+$article = $_GET['article'];
  ?>
 
 <article class="card">
-  	<h1><?php echo $_GET['titre']; ?></h1>
+  	<h1><?php echo $description[$article]['titre']; ?></h1>
 
 
   		<div class="container">
 			<div class="row">
 
   				<div class="col-lg-3">
-  					<img class="card-img-top " src="<?php echo $_GET['img'];?>" alt="preservatif">
+  					<img class="card-img-top " src="<?php echo $description[$article]['img'];?>" alt="Jeux">
   				</div>
 
   				<div class="col-lg-7">
   					<div class="card-block ">
-    					<p class="card-text ">Le plaisir commence ici.</p>
+    					<p class="card-text ">
+                <?php echo $description[$article]['jeux'];?>
+              </p>
   					</div>
   				</div>
 
