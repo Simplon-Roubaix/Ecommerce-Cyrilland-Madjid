@@ -7,6 +7,7 @@
       <!--  start header -->
       <?php
         include "header.php";
+        include 'navbar.php';
        ?>
        <!-- end header -->
 
@@ -16,8 +17,6 @@
 
         <!-- Add your site or application content here -->
         <!-- start body -->
-
-
           <div class="container">
               <div class="row">
 
@@ -31,7 +30,7 @@
                 <h4 class="card-title"> <?php   echo $value['titre']; ?></h4>
                   <p class="card-text"><?php echo $value['description']; ?></p>
 
-                  <a href="infoArticle.php?article=<?php echo $key; ?>" class="btn btn-danger">Apperçue</a>
+                  <a href="infoArticle.php?article=<?php echo $key; ?>" class="btn btn-danger">Details</a>
             </div>
       </div>
 <?php
