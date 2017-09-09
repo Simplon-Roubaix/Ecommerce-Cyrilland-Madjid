@@ -1,6 +1,7 @@
 <?php 
 include "header.php";
 include "description.php";
+include 'navbar.php';
 $article = $_GET['article'];
  ?>
 
