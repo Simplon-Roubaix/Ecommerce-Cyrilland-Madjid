@@ -31,7 +31,7 @@
                   <p class="card-text"><?php echo $value['description']; ?></p>
                   <p class="card-text"><strong><?php echo $value['prix']; ?></strong></p>
 
-                  <a href="infoArticle.php?article=<?php echo $key; ?>" class="btn btn-primary">Details</a>
+                  <a href="infoArticle.php?article=<?php echo $key; ?>" class="btn btn-outline-success">Details</a>
             </div>
       </div>
 <?php
