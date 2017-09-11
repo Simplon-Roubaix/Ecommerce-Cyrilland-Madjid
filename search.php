@@ -21,7 +21,7 @@ if (search($description) || search($description) == 0) {
 	include 'card.php';
 }
 else {
-	echo "Casse toi!";
+	echo "Nous avons pas cet article en stock!";
 }
 ?>
 
