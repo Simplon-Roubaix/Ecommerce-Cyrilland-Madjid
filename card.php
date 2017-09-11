@@ -6,8 +6,12 @@
 			<div class="row">
 
   				<div class="col-lg-4">
-  					<img class="card-img-top " src="<?php echo $description[$article]['img'];?>" alt="Jeux">
+  					<img class="card-img" src="<?php echo $description[$article]['img'];?>" alt="Jeux">
   				</div>
+          <div class="col-lg-4">
+            <p class="card-text"><?php echo $description[$article]['details'];?></p>
+            <p class="card-text"><strong><?php echo $description[$article]['prix'];?></strong></p>
+          </div>
 
   				<div class="col-lg-8">
   					<div class="card-block ">
