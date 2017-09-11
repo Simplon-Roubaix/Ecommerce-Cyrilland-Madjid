@@ -1,6 +1,7 @@
 <?php
 include "header.php";
 include "description.php";
+
 $id = $_POST['form'];
 
  ?>
@@ -27,5 +28,10 @@ $id = $_POST['form'];
 </article>
 
 <?php
+
+include 'navbar.php';
+$article = $_GET['article'];
+ include "card.php";
+
 include "footer.php";
  ?>

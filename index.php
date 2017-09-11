@@ -7,6 +7,7 @@
       <!--  start header -->
       <?php
         include "header.php";
+        include 'navbar.php';
        ?>
        <!-- end header -->
 
@@ -16,8 +17,6 @@
 
         <!-- Add your site or application content here -->
         <!-- start body -->
-
-
           <div class="container">
               <div class="row">
 
@@ -25,19 +24,23 @@
   foreach ($description as $key => $value) {
   ?>
                 <!-- card -->
-      <div class="card" style="width: 20rem;">
+      <div class="card" style="width: 15rem;">
           <img class="card-img-top img-fluid" src="<?php echo $value['img']; ?>" alt="<?php echo $value['alt']; ?>">
             <div class="card-block">
-                <h4 class="card-title"> <?php   echo $value['titre']; ?></h4>
+                <h4 class="card-title"> <?php echo $value['titre']; ?></h4>
                   <p class="card-text"><?php echo $value['description']; ?></p>
+                  <p class="card-text"><strong><?php echo $value['prix']; ?></strong></p>
 
-                <!--   <a href="infoArticle.php?numeroProduit=<?php 
-                //echo $key; ?>" class="btn btn-danger">Clito</a> -->
+
+              
 
                 <form action="infoArticle.php" method="post" >
                  <input type="hidden" name="form" value="<?php echo $key ?>">
                   <input type="submit" value="Valider">
                 </form>
+
+
+                  <a href="infoArticle.php?article=<?php echo $key; ?>" class="btn btn-outline-success">Details</a>
 
             </div>
       </div>
