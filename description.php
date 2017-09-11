@@ -2,7 +2,25 @@
 
 <?php
 $description = array(
- array('img' =>'./img/R6XBONE.jpg','titre'=>'Rainbow 6 siege', 'description' => 'FPS', 'prix' => '29.99€', 'jeux' => "
+ array('img' =>'./img/R6XBONE.jpg','titre'=>'Rainbow 6 siege', 'description' => 'FPS', 'prix' => '29.99€', 'details' => "
+<ul>
+	<li>Age minimum conseillé 18</li>
+
+	<li>Editeur : UBISOFT France</li>
+
+	<li>Genre : FPS</li>
+
+	<li>Date de sortie : 1 déc. 2015</li>
+
+	<li>Multijoueur : Oui</li>
+
+	<li>Fonctionnalités Internet : Oui</li>
+
+	<li>Texte/Voix : Français</li>
+
+	<li>Accessoires optionnels : Xbox Live Gold (recommandé)</li>
+</ul>
+",'jeux' => "
 
 Précommandez le jeu pour obtenir un accès garanti à la Béta. Offre limitée.
 
@@ -24,7 +42,25 @@ Chaque partie commence par un pré-round tactique qui voit chacun des 2 camps pr
 Le retour du mode historique
 Rainbow Six Siege marque le retour du mode la Chasse aux Terroristes. Cette fois, les joueurs feront face à une menace inédite dans l’univers de Rainbow Six : les White Masks. Jouable seul ou en coopérations avec jusqu’à 5, le mode Chasse aux Terroristes place le joueur dans des situations hostiles face à de nombreux ennemis contrôlés par une nouvelle IA qui leur permettra de réagir directement et efficacement aux actions et choix tactiques des joueurs. En plus du mode Chasse aux Terroristes classique, Rainbow Six Siege proposera aux joueurs de participer à des parties avec des objectifs à sécuriser à la fois en attaque et en défense.
 "),
- array('img' =>'./img/cod_wwII.jpg' ,'titre' => 'Call Of Duty WWII' , 'description' => 'FPS', 'prix' => '69.99€', 'jeux' => "
+ array('img' =>'./img/cod_wwII.jpg' ,'titre' => 'Call Of Duty WWII' , 'description' => 'FPS', 'prix' => '69.99€', 'details' => "
+<ul>
+	<li>Age minimum conseillé 18</li>
+
+	<li>Editeur : ACTIVISION</li>
+
+	<li>Genre : FPS</li>
+
+	<li>Date de sortie : 3 nov. 2017</li>
+
+	<li>Multijoueur : Oui</li>
+
+	<li>Fonctionnalités Internet : Oui</li>
+
+	<li>Texte/Voix : Français</li>
+
+	<li>Accessoires optionnels : Xbox Live Gold</li>
+</ul>
+", 'jeux' => "
 
 Call of Duty® renoue avec ses origines dans Call of Duty®: WWII - une expérience époustouflante qui redéfinit le FPS Seconde Guerre mondiale pour une nouvelle génération de joueurs. Débarquez en Normandie le 6 juin 1944 et combattez à travers la France et l’Europe sur les fronts emblématiques de la plus grande guerre de l’Histoire. Vivez des combats dans la plus pure tradition de Call of Duty et forgez des liens de camaraderie inébranlables face à la nature impitoyable de la guerre contre une puissance mondiale faisant ployer le monde sous le joug de sa tyrannie.
 
@@ -46,7 +82,21 @@ UN MODE COOPÉRATIF EXPLOSIF
 
 Le mode coopératif de Call of Duty®: WWII  proposera une nouvelle intrigue originale. Jouez avec vos amis dans cette expérience de jeu pleine de rebondissements et riche en adrénaline.
 "),
- array('img' =>' ./img/dishonored.jpg', 'titre' => 'Dishonored', 'description' => 'FPS', 'prix' => '29.99€', 'jeux' => "
+ array('img' =>' ./img/dishonored.jpg', 'titre' => 'Dishonored', 'description' => 'FPS', 'prix' => '29.99€', 'details' => "
+<ul>
+	<li>Age minimum conseillé 18</li>
+
+	<li>Editeur : BETHESDA</li>
+
+	<li>Genre : FPS</li>
+
+	<li>Date de sortie : 15 sept. 2017</li>
+
+	<li>Multijoueur : Non</li>
+
+	<li>Texte/Voix : Français</li>
+</ul>
+", 'jeux' => "
 
 Elle était autrefois l'une des tueuses à gages les plus notoires de Dunwall. Elle s'est rendue à Karnaca en quête de rédemption dans Dishonored 2. À présent, Billie Lurk (alias Meagan Foster) fait son retour dans Dishonored : La mort de l'Outsider pour le plus grand plaisir de ses nombreux fans. Après avoir retrouvé son mentor, le légendaire assassin Daud, Billie devra explorer les bas-fonds de Karnaca pour accomplir l'assassinat ultime : celui de l'Outsider.
 
@@ -56,7 +106,25 @@ Avec des systèmes de combat brutaux, des armes mortelles, de puissants gadgets 
 
 Au fil de son périple, Billie dévoilera certains des secrets de l'Outsider, une entité âgée de 4000 ans qui a toujours joué un rôle central dans les plus infâmes agissements de l'Empire. Elle sera également contrainte de prendre des décisions difficiles qui changeront à jamais le monde qui l'entoure.
 "),
- array('img' =>' ./img/fhxb1.jpg', 'titre' => 'For Honor', 'description' => 'Combat', 'prix' => '69.99€', 'jeux' => "Semez la mort dans les batailles viscérales de For Honor, jeu d'action au corps à corps développé par Ubisoft Montréal en collaboration avec d'autres studios Ubisoft.
+ array('img' =>' ./img/fhxb1.jpg', 'titre' => 'For Honor', 'description' => 'Combat', 'prix' => '69.99€', 'details' => "
+<ul>
+	<li>Age minimum conseillé 18</li>
+
+	<li>Editeur : UBISOFT France</li>
+
+	<li>Genre : Combat</li>
+
+	<li>Date de sortie : 14 févr. 2017</li>
+
+	<li>Multijoueur : Oui, 8 joueurs</li>
+
+	<li>Fonctionnalités Internet : Oui</li>
+
+	<li>Texte/Voix : Français</li>
+
+	<li>Accessoires obligatoires : Connexion Internet, Xbox Live Gold</li>
+</ul>
+", 'jeux' => "Semez la mort dans les batailles viscérales de For Honor, jeu d'action au corps à corps développé par Ubisoft Montréal en collaboration avec d'autres studios Ubisoft.
 
 Vivez le chaos de la guerre dans la peau d'un Chevalier, d'un Viking ou d'un Samouraï, trois des plus grandes peuplades guerrières de l'Histoire. Croisez le fer dans des combats vifs et sanglants, à travers une campagne scénarisée passionnante et des modes multijoueur originaux.
 
@@ -84,7 +152,21 @@ Maniez de lourdes armes avec un sentiment de puissance extraordinaire, grâce à
 
 • VOTRE GUERRIER, VOS COULEURS
 Personnalisez votre guerrier sous toutes ses facettes : poitrine, épaules, casque, etc."),
- array('img' =>' ./img/sgw3xb1.jpg', 'titre' => 'Sniper Ghost Warrior 3', 'description' => 'FPS', 'prix' => '69.99€', 'jeux' => "
+ array('img' =>' ./img/sgw3xb1.jpg', 'titre' => 'Sniper Ghost Warrior 3', 'description' => 'FPS', 'prix' => '69.99€', 'details' => "
+<ul>
+	<li>Age minimum conseillé 18</li>
+
+	<li>Editeur : KOCH MEDIA</li>
+
+	<li>Genre : FPS</li>
+
+	<li>Date de sortie : 25 avr. 2017</li>
+
+	<li>Multijoueur : Non</li>
+
+	<li>Texte/Voix : Français</li>
+</ul>
+", 'jeux' => "
 
 La version contient :
 
@@ -109,7 +191,23 @@ Vous êtes les trois à la fois : vous incarnez un sniper américain parachuté 
 
 Explorez des cartes immenses en monde ouvert avec une météo dynamique et un cycle jour / nuit qui influent sur votre manière de jouer et vos décisions. Sniper Ghost Warrior 3 vous plonge au cœur d’un récit de fraternité, de foi et de trahison dans un monde baignant dans le sang de la guerre civile.
 "),
- array('img' =>' ./img/valkyria.jpg', 'titre' => 'Valkyria Revolution', 'description' => 'Jeu de rôle ', 'prix' => '39.99€', 'jeux' => "
+ array('img' =>' ./img/valkyria.jpg', 'titre' => 'Valkyria Revolution', 'description' => 'Jeu de rôle ', 'prix' => '39.99€', 'details' => "
+<ul>
+	<li>Age minimum conseillé 16</li>
+
+	<li>Editeur : KOCH MEDIA</li>
+
+	<li>Genre : Jeu de rôle</li>
+
+	<li>Date de sortie : 30 juin 2017</li>
+
+	<li>Multijoueur : Non</li>
+	
+	<li>Fonctionnalités Internet : Non</li>
+
+	<li>Texte/Voix : Anglais</li>
+</ul>
+", 'jeux' => "
 
 Au lendemain d'une révolution, les Vanargand, soldats d'élite du Jutland, doivent faire front commun pour vaincre le Ruzi Empire et arrêter la mort elle-même : la Valkyria.
 
