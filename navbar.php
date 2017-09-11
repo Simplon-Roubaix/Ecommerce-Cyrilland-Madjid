@@ -13,12 +13,12 @@
     Liste des jeux
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="http://localhost/Ecommerce-Cyrilland-Madjid/infoArticle.php?article=0">Rainbow 6 siege</a>
-    <a class="dropdown-item" href="http://localhost/Ecommerce-Cyrilland-Madjid/infoArticle.php?article=1"> Call Of Duty WWII</a>
-    <a class="dropdown-item" href="http://localhost/Ecommerce-Cyrilland-Madjid/infoArticle.php?article=2">Dishonored</a>
-    <a class="dropdown-item" href="http://localhost/Ecommerce-Cyrilland-Madjid/infoArticle.php?article=3">For Honor</a>
-    <a class="dropdown-item" href="http://localhost/Ecommerce-Cyrilland-Madjid/infoArticle.php?article=4">  Sniper Ghost Warrior 3</a>
-    <a class="dropdown-item" href="http://localhost/Ecommerce-Cyrilland-Madjid/infoArticle.php?article=5">Valkyria Revolution</a>
+    <?php
+    foreach ($description as $key => $value) { ?>
+      <a href="infoArticle.php?article=<?php echo $key; ?>" class= "dropdown-item"><?php echo $value['titre']; ?></a>
+    <?php
+    }
+    ?>
   </div>
 </div>
     </ul>
