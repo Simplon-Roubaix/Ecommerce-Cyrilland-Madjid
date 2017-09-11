@@ -1,16 +1,19 @@
-<?php 
+<?php
 include "header.php";
+include "description.php";
+$id = $_POST['form'];
+
  ?>
 
 <article class="card">
-  	<h1><?php echo $_GET['titre']; ?></h1>
+  	<h1><?php echo $description[$id]['titre']; ?></h1>
 
 
   		<div class="container">
 			<div class="row">
 
   				<div class="col-lg-3">
-  					<img class="card-img-top " src="<?php echo $_GET['img'];?>" alt="preservatif">
+  					<img class="card-img-top " src="<?php echo $description[$id]['img'];?>" alt="preservatif">
   				</div>
 
   				<div class="col-lg-7">
@@ -23,6 +26,6 @@ include "header.php";
   		</div>
 </article>
 
-<?php 
+<?php
 include "footer.php";
  ?>

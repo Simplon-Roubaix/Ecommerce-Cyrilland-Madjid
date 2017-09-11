@@ -31,7 +31,14 @@
                 <h4 class="card-title"> <?php   echo $value['titre']; ?></h4>
                   <p class="card-text"><?php echo $value['description']; ?></p>
 
-                  <a href="infoArticle.php?titre=<?php echo $value['titre']; ?>&amp;img=<?php echo $value['img']; ?>&amp;description=<?php echo $value['description']; ?>" class="btn btn-danger">Clito</a>
+                <!--   <a href="infoArticle.php?numeroProduit=<?php 
+                //echo $key; ?>" class="btn btn-danger">Clito</a> -->
+
+                <form action="infoArticle.php" method="post" >
+                 <input type="hidden" name="form" value="<?php echo $key ?>">
+                  <input type="submit" value="Valider">
+                </form>
+
             </div>
       </div>
 <?php
