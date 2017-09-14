@@ -16,12 +16,12 @@
 			return false;
 }
 
-if (search($description) || search($description) == 0) {
+if (search($description) || search($description) === 0) {
 	$article = search($description);
 	include 'card.php';
 }
 else {
-	echo "Casse toi!";
+	echo "Nous avons pas cet article en stock!";
 }
 ?>
 

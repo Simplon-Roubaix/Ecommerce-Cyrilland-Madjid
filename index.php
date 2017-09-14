@@ -25,7 +25,7 @@
   ?>
                 <!-- card -->
       <div class="card" style="width: 15rem;">
-          <img class="card-img-top img-fluid" src="<?php echo $value['img']; ?>" alt="<?php echo $value['alt']; ?>">
+          <img class="img-fluid" src="<?php echo $value['img']; ?>" alt="<?php echo $value['alt']; ?>">
             <div class="card-block">
                 <h4 class="card-title"> <?php echo $value['titre']; ?></h4>
                   <p class="card-text"><?php echo $value['description']; ?></p>
