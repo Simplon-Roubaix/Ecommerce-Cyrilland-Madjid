@@ -1,11 +1,10 @@
 <?php
 include "header.php";
 include "description.php";
+// $id = $_POST['form'];
 
-$id = $_POST['form'];
 
- ?>
-
+/*
 <article class="card">
   	<h1><?php echo $description[$id]['titre']; ?></h1>
 
@@ -25,9 +24,9 @@ $id = $_POST['form'];
 
   			</div>
   		</div>
-</article>
+</article>*/
 
-<?php
+
 
 include 'navbar.php';
 $article = $_GET['article'];

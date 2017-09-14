@@ -32,12 +32,12 @@
                   <p class="card-text"><strong><?php echo $value['prix']; ?></strong></p>
 
 
-              
 
-                <form action="infoArticle.php" method="post" >
+
+              <!-- //  <form action="infoArticle.php" method="post" >
                  <input type="hidden" name="form" value="<?php echo $key ?>">
                   <input type="submit" value="Valider">
-                </form>
+                </form>// -->
 
 
                   <a href="infoArticle.php?article=<?php echo $key; ?>" class="btn btn-outline-success">Details</a>
