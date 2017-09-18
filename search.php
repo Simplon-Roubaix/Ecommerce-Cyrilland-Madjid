@@ -1,13 +1,13 @@
 <?php
 	include "header.php";
-	include "description.php";
+	
 	include 'navbar.php';
 ?>
 
 <?php
-	function search($description) {
+	function search($donnees) {
 		$valtest = $_POST['form'];
-		foreach ($description as $key => $value) { 
+		foreach ($donnees as $key => $value) { 
 			// var_dump($value['titre']);
 				if ($valtest == $value['titre']) {
 					return $key;
@@ -16,8 +16,8 @@
 			return false;
 }
 
-if (search($description) || search($description) === 0) {
-	$article = search($description);
+if (search($donnees) || search($donnees) === 0) {
+	$article = search($donnees);
 	include 'card.php';
 }
 else {

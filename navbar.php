@@ -14,7 +14,8 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <?php
-    foreach ($description as $key => $value) { ?>
+    foreach ($description as $key => $value)
+    { ?>
       <a href="infoArticle.php?article=<?php echo $key; ?>" class= "dropdown-item"><?php echo $value['titre']; ?></a>
     <?php
     }
