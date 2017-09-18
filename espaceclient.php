@@ -1,4 +1,5 @@
 <?php
+session_start();
       // <!--  start header -->
 
         include "header.php";
@@ -40,10 +41,3 @@
 		        </div>
 		    </div>
 	</div>
-
-
-
-
-
-
-

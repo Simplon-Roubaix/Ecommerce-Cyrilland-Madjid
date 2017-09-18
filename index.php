@@ -1,4 +1,7 @@
-
+<?php
+session_start();
+if(isset($_SESSION['pseudo'])){
+echo $_SESSION['pseudo']; }?>
 <?php
     require "informations.php" ;
 
@@ -46,10 +49,12 @@ while ($reponse1 = $reponse->fetch()) {
                 <h4 class="card-title"> <?php echo $reponse1['titre']; ?></h4>
                   <p class="card-text"><?php echo $reponse1['description']; ?></p>
                   <p class="card-text"><strong><?php echo $reponse1['prix']; ?></strong></p>
+
                   <a href="infoArticle.php?article=<?php echo $key; ?>" class="btn btn-outline-success">Details</a>
 
             </div>
       </div>
+
 
 <?php
 }

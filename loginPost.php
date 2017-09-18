@@ -17,18 +17,22 @@ $req->execute(array(
 
     'titre' => $titre,
 
+
     'description' => $description,
 
     'prix' => $prix,
+
 
     'caracteristiques' => $caracteristiques,
 
     'resume' => $resume
 
 
+
     ));
 
 echo 'Le jeu a bien été ajouté !';
+
 
 ?>
 <?php
@@ -55,6 +59,7 @@ $req->execute(array(
 
 if (isset($_FILES['monfichier']) and $_FILES['monfichier']['error'] == 0) {
     // Testons si le fichier n'est pas trop gros
+
 
     if ($_FILES['monfichier']['size'] <= 1000000) {
         $infosfichier = pathinfo($_FILES['monfichier']['name']);

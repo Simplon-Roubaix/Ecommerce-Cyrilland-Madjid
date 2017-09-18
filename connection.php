@@ -1,3 +1,5 @@
+ <?php   session_start(); ?>
+
 <?php
 
   // connection a la base de donnees
@@ -30,7 +32,9 @@ if (isset($_POST)) {
  else  {
 
 
+
  	session_start();
+
 
 
  		# code...
