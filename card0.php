@@ -1,35 +1,3 @@
-<?php
-// le nom d'hôte (localhost) ;
-//
-// la base de données (test) ;
-//
-// le login (root) ;
-//
-// le mot de passe ;
-try
-{
-  $bdd = new PDO('mysql:host=localhost;dbname=E-Commerce;charset=utf8', 'root', 'DarkShot666', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-
-}
- catch (Exception $e)
-  {
-    die('Erreur : ' .$e->getMessage());
-}
-
-
-$reponse = $bdd->query('SELECT * FROM produits') or die(print_r($bdd->errorInfo()));
-
-
-while ($donnees = $reponse->fetch()){
-?>
-
-
-
-
-
-
-
-
 <article class="card">
   	<h1><?php echo $description[$article]['titre']; ?></h1>
 
@@ -56,12 +24,3 @@ while ($donnees = $reponse->fetch()){
   			</div>
   		</div>
 </article>
-<?php
-
-
-
-$reponse->closeCursor(); // Termine le traitement de la requête
-
-}
-
- ?>
