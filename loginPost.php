@@ -13,7 +13,7 @@ catch (Exception $e)
   die('Erreur : ' .$e->getMessage());
 }
 
-
+                
 
 if (isset($_POST['titre'])
 
@@ -21,7 +21,7 @@ AND isset($_POST['description'])
 
  AND isset($_POST['prix'])
  AND isset($_POST['details'])
- AND isset($_POST['jeux']))
+ AND isset($_POST['jeux'])){
   // Testons si le fichier a bien été envoyé et s'il n'y a pas d'erreur
 
 if (isset($_FILES['monfichier']) AND $_FILES['monfichier']['error'] == 0)
@@ -31,25 +31,21 @@ if (isset($_FILES['monfichier']) AND $_FILES['monfichier']['error'] == 0)
         if ($_FILES['monfichier']['size'] <= 1000000)
 
         {
-
-
-
 $infosfichier = pathinfo($_FILES['monfichier']['name']);
-
+// var_dump($infosfichier);
 $extension_upload = $infosfichier['extension'];
-
+// var_dump($extension_upload);
   $extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png');
 
                 if (in_array($extension_upload, $extensions_autorisees))
 
                 {
-
-                
                         // On peut valider le fichier et le stocker définitivement
 
-                        move_uploaded_file($_FILES['monfichier']['tmp_name'], 'uploads/' . basename($_FILES['monfichier']['name']));
+                      move_uploaded_file($_FILES['monfichier']['tmp_name'], 'img/' . $_FILES['monfichier']['name']);
 
-                        echo "L'envoi a bien été effectué !";
+
+                        // echo "L'envoi a bien été effectué !";
 
                 }
 
@@ -86,13 +82,35 @@ $req = $bdd->prepare('INSERT INTO produits(titre, description, prix, details, je
     'jeux' => $jeux
   ));
 
+$idLastProduct = $bdd -> lastInsertId();
+
+
+$req = $bdd->prepare('INSERT INTO image(image, type, taille, id_produits)
+
+   VALUES(:image, :type, :taille, :id_produits)');
+
+$req->execute(array(
+
+    'image' => $_FILES['monfichier']['name'],
+
+    'type' => $_FILES['monfichier']['type'],
+
+    'taille' => $_FILES['monfichier']['size'],
+
+    'id_produits' => $idLastProduct,
+
+   
+  ));
+
+
+
+
   //redirection vers index.php "function"
- echo "Formulaire Envoyer";
- header('Location:index.php');
- 
+ // echo "Formulaire Envoyer";
+header('Location: index.php');
 
 }
-
+}
 
 
 

@@ -1,4 +1,5 @@
 <?php 
+
 require "informations.php";
  ?>
 <!doctype html>
@@ -30,6 +31,11 @@ require "informations.php";
           <h2 class="lead text-center"> <?php
             echo $info['description'];?>
             <a href="espaceclient.php"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+
+            <?php if(isset($_SESSION['pseudo'])){?>
+               <a href="ko.php"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+           <?php }  ?> 
+            
           </h2>
 
           <hr class="my-4">
