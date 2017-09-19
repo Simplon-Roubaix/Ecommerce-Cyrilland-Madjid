@@ -32,9 +32,9 @@ if (isset($_FILES['monfichier']) AND $_FILES['monfichier']['error'] == 0)
 
         {
 $infosfichier = pathinfo($_FILES['monfichier']['name']);
-// var_dump($infosfichier);
+
 $extension_upload = $infosfichier['extension'];
-// var_dump($extension_upload);
+
   $extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png');
 
                 if (in_array($extension_upload, $extensions_autorisees))
@@ -85,6 +85,7 @@ $req = $bdd->prepare('INSERT INTO produits(titre, description, prix, details, je
 $idLastProduct = $bdd -> lastInsertId();
 
 
+//  requête insert image
 $req = $bdd->prepare('INSERT INTO image(image, type, taille, id_produits)
 
    VALUES(:image, :type, :taille, :id_produits)');
@@ -104,9 +105,8 @@ $req->execute(array(
 
 
 
-
   //redirection vers index.php "function"
- // echo "Formulaire Envoyer";
+
 header('Location: index.php');
 
 }

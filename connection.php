@@ -13,7 +13,7 @@ catch (Exception $e)
   die('Erreur;' .$e->getMessage());
 }
 
-if (isset($_POST)) {
+if (isset($_POST["pseudo"]) AND isset($_POST["userPass"])) {
 
   // code
   // recuperer les informations de cet utilisateur
@@ -26,20 +26,15 @@ if (isset($_POST)) {
 
   if(!$req -> fetch()) {
 
-    echo'Verifier vos informations';
     header('refresh:1,espaceclient.php');
   }
  else  {
-
- 	
- 
-
  
  		# code...
  	
  	$_SESSION['pseudo'] = $_POST['pseudo'];
  	$_SESSION['userPass']= $_POST['userPass'];
- 	echo'Bienvenue';
+
  		header('Location:login.php');
 
 }
