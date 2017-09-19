@@ -31,12 +31,6 @@ if (isset($_POST)) {
   }
  else  {
 
-
-
- 	session_start();
-
-
-
  		# code...
 
  	$_SESSION['pseudo'] = $_POST['pseudo'];

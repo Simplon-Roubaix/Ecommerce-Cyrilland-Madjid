@@ -1,7 +1,7 @@
-    <?php  
+    <?php
     try
 {
-  $bdd = new PDO('mysql:host=localhost;dbname=Ecommerce;charset=utf8', 'phpmyadmin', 'maD24101975', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+  $bdd = new PDO('mysql:host=localhost;dbname=E-Commerce;charset=utf8', 'root', 'DarkShot666', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
 }
  catch (Exception $e)
