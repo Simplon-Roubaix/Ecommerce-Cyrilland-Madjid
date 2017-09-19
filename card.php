@@ -45,7 +45,7 @@ while ($donnees = $reponse->fetch()){
   				<div class="col-lg-8">
   					<div class="card-block ">
     					<p class="card-text ">
-                <?php echo $description[$article]['jeux'];?>
+                <?php echo $donnees['jeux'];?>
               </p>
   					</div>
   				</div>

@@ -12,16 +12,7 @@ echo $_SESSION['pseudo']; }?>
 
        ?>
 
-       <!-- end header -->
-
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <!-- start body -->
-      
-
+    
 <?php
    try
 {
@@ -48,19 +39,14 @@ $reponse = $bdd->query('SELECT * FROM image
 while ($reponse1 = $reponse->fetch()){
   
     # code...
-
-
   ?>
-            
-                <!-- card -->
+             <!-- card -->
       <div class="card" style="width: 20rem;">
           <img class="img-fluid" src="img/<?php echo $reponse1['image']; ?>">
             <div class="card-block">
                 <h4 class="card-title"> <?php echo $reponse1['titre']; ?></h4>
                   <p class="card-text"><?php echo $reponse1['description']; ?></p>
                   <p class="card-text"><strong><?php echo $reponse1['prix']; ?></strong></p>
-
-
                   <a href="infoArticle.php?id=<?php echo $reponse1['id']; ?>" class="btn btn-outline-success">Details</a>
 
             </div>
