@@ -10,7 +10,11 @@
 }
 
 
-$reponse = $bdd->query('SELECT * FROM produits') or die(print_r($bdd->errorInfo()));
+
+$reponse = $bdd->prepare('SELECT * FROM produits WHERE id = :id') or die(print_r($bdd->errorInfo()));
+
+$reponse->execute(array(
+                    'id' => $_GET['id'] ));
 
 
 while ($donnees = $reponse->fetch()){

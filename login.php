@@ -2,10 +2,12 @@
 include ('header.php');
  ?>
 
+<?php
+
+ ?>
+<form action="loginPost.php" method="post" enctype="multipart/form-data">
 
 
-
-<form action="loginPost.php" method="post" accept-charset="utf-8">
 	<input type="text" name="titre" value="" placeholder="titre">
 	<input type="text" name="description" placeholder="description">
 	<input type="number" name="prix" value="" placeholder="prix">
