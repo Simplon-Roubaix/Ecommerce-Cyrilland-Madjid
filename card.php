@@ -18,7 +18,7 @@ try
 
 
 $reponse = $bdd->prepare('SELECT * FROM produits
- INNER JOIN  image
+ INNER JOIN  images
 ON id_produits =  produits.id AND produits.id = :id ') or die(print_r($bdd->errorInfo()));
 $reponse->execute(array('id'=>$_GET['id']));
 
@@ -35,7 +35,7 @@ while ($donnees = $reponse->fetch()){
 			<div class="row">
 
   				<div class="col-lg-4">
-  					<img class="card-img" src="img/<?php echo $donnees['image'];?>" alt="Jeux">
+  					<img class="card-img" src="img/<?php echo $donnees['images'];?>" alt="Jeux">
   				</div>
           <div class="col-lg-4">
             <p class="card-text"><?php echo $donnees['details'];?></p>

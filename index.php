@@ -30,7 +30,7 @@ echo $_SESSION['pseudo']; }?>
  }
 
 
-$reponse = $bdd->query('SELECT * FROM image
+$reponse = $bdd->query('SELECT * FROM images
                         INNER JOIN  produits
                         ON id_produits =  produits.id '
                       ) or die(print_r($bdd->errorInfo()));
@@ -50,7 +50,7 @@ while ($reponse1 = $reponse->fetch()){
 
                 <!-- card -->
       <div class="card" style="width: 20rem;">
-          <img class="img-fluid" src="img/<?php echo $reponse1['image']; ?>">
+          <img class="img-fluid" src="img/<?php echo $reponse1['images']; ?>">
             <div class="card-block">
                 <h4 class="card-title"> <?php echo $reponse1['titre']; ?></h4>
                   <p class="card-text"><?php echo $reponse1['description']; ?></p>

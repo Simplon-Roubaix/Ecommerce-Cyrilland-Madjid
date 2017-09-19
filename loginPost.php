@@ -60,7 +60,6 @@ $req->execute(array(
 <?php
 
 // Testons si le fichier a bien été envoyé et s'il n'y a pas d'erreur
-var_dump($_FILES);
 if (isset($_FILES['monfichier']) and $_FILES['monfichier']['error'] == 0) {
     // Testons si le fichier n'est pas trop gros
 
