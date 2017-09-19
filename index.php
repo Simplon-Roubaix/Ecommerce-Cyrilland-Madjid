@@ -30,27 +30,36 @@ echo $_SESSION['pseudo']; }?>
  }
 
 
-$reponse = $bdd->query('SELECT * FROM produits') or die(print_r($bdd->errorInfo()));
+$reponse = $bdd->query('SELECT * FROM image
+                        INNER JOIN  produits
+                        ON id_produits =  produits.id '
+                      ) or die(print_r($bdd->errorInfo()));
 ?>
 
 
 <div class="container">
-<div class="row">
+
+  <div class="row">
 <?php
 
-while ($reponse1 = $reponse->fetch()) {
+while ($reponse1 = $reponse->fetch()){
+
+    # code...
 
     # code... ?>
 
                 <!-- card -->
-      <div class="card" style="width: 15rem;">
-          <img class="img-fluid" src="<?php echo $reponse1['img']; ?>">
+      <div class="card" style="width: 20rem;">
+          <img class="img-fluid" src="img/<?php echo $reponse1['image']; ?>">
             <div class="card-block">
                 <h4 class="card-title"> <?php echo $reponse1['titre']; ?></h4>
                   <p class="card-text"><?php echo $reponse1['description']; ?></p>
                   <p class="card-text"><strong><?php echo $reponse1['prix']; ?></strong></p>
 
-                  <a href="infoArticle.php?article=<?php echo $key; ?>" class="btn btn-outline-success">Details</a>
+
+
+                  <a href="infoArticle.php?id=<?php echo $reponse1['id']; ?>" class="btn btn-outline-success">Details</a>
+
 
             </div>
       </div>

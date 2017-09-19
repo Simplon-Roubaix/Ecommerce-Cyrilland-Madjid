@@ -1,3 +1,4 @@
+
 <?php
 try {
     $bdd = new PDO('mysql:host=localhost;dbname=E-Commerce;charset=utf8', 'root', 'DarkShot666');
@@ -12,6 +13,7 @@ $resume = $_POST['resume'];
 
 $req = $bdd->prepare('INSERT INTO produits(titre, description, prix, caracteristiques, resume)
 VALUES(:titre, :description, :prix, :caracteristiques, :resume)');
+
 
 $req->execute(array(
 
@@ -43,7 +45,9 @@ try {
 };
 $req = $bdd->query('SELECT MAX(id) FROM produits');
 
+
 $id_produits =  $req->fetchAll();
+
 
 $req = $bdd->prepare('INSERT INTO images(titre, id_produits) VALUES(:titre, :id_produits)');
 
@@ -66,10 +70,12 @@ if (isset($_FILES['monfichier']) and $_FILES['monfichier']['error'] == 0) {
         $extension_upload = $infosfichier['extension'];
         $extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png');
 
+
         if (in_array($extension_upload, $extensions_autorisees)) {
           // On peut valider le fichier et le stocker définitivement
 
                         move_uploaded_file($_FILES['monfichier']['tmp_name'], 'img/' . basename($_FILES['monfichier']['name']));
+
 
                         echo "L'envoi a bien été effectué !";
         }

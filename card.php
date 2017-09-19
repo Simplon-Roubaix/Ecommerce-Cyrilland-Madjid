@@ -17,32 +17,29 @@ try
 }
 
 
-$reponse = $bdd->query('SELECT * FROM produits') or die(print_r($bdd->errorInfo()));
-
+$reponse = $bdd->prepare('SELECT * FROM produits
+ INNER JOIN  image
+ON id_produits =  produits.id AND produits.id = :id ') or die(print_r($bdd->errorInfo()));
+$reponse->execute(array('id'=>$_GET['id']));
 
 while ($donnees = $reponse->fetch()){
 ?>
 
 
 
-
-
-
-
-
 <article class="card">
-  	<h1><?php echo $description[$article]['titre']; ?></h1>
+  	<h1><?php echo $donnees['titre']; ?></h1>
 
 
   		<div class="container">
 			<div class="row">
 
   				<div class="col-lg-4">
-  					<img class="card-img" src="<?php echo $description[$article]['img'];?>" alt="Jeux">
+  					<img class="card-img" src="img/<?php echo $donnees['image'];?>" alt="Jeux">
   				</div>
           <div class="col-lg-4">
-            <p class="card-text"><?php echo $description[$article]['details'];?></p>
-            <p class="card-text"><strong><?php echo $description[$article]['prix'];?></strong></p>
+            <p class="card-text"><?php echo $donnees['details'];?></p>
+            <p class="card-text"><strong><?php echo $donnees['prix'];?></strong></p>
           </div>
 
   				<div class="col-lg-8">

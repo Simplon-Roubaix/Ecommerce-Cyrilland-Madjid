@@ -34,8 +34,8 @@ require "informations.php";
 
             <?php if(isset($_SESSION['pseudo'])){?>
                <a href="ko.php"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
-           <?php }  ?> 
-            
+           <?php }  ?>
+
           </h2>
 
           <hr class="my-4">
