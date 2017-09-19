@@ -1,3 +1,4 @@
+
 <?php 
 include 'header.php';
  ?>
@@ -56,68 +57,93 @@ $extension_upload = $infosfichier['extension'];
 
   $prix = $_POST['prix'];
 
+<?php
+try {
+    $bdd = new PDO('mysql:host=localhost;dbname=E-Commerce;charset=utf8', 'root', 'DarkShot666');
+} catch (Exception $e) {
+    die('Erreur : '.$e->getMessage());
+};
+$titre = $_POST['titre'];
+$description = $_POST['description'];
+$prix = $_POST['prix'];
+$caracteristiques = $_POST['caracteristiques'];
+$resume = $_POST['resume'];
 
-  $details = $_POST['details'];
-
-  $jeux = $_POST['jeux'];
-
-  # code...
-
- 
-$req = $bdd->prepare('INSERT INTO produits(titre, description, prix, details, jeux)
-
-   VALUES(:titre, :description, :prix, :details , :jeux)');
+$req = $bdd->prepare('INSERT INTO produits(titre, description, prix, caracteristiques, resume)
+VALUES(:titre, :description, :prix, :caracteristiques, :resume)');
 
 
-  $req->execute(array(
+$req->execute(array(
 
     'titre' => $titre,
 
+
     'description' => $description,
 
-       'prix' => $prix,
+    'prix' => $prix,
 
-    'details' => $details,
 
-    'jeux' => $jeux
-  ));
+    'caracteristiques' => $caracteristiques,
 
-$idLastProduct = $bdd -> lastInsertId();
+    'resume' => $resume
+
+
+
+    ));
+
+echo 'Le jeu a bien été ajouté !';
+
+
+?>
+<?php
+try {
+    $bdd = new PDO('mysql:host=localhost;dbname=E-Commerce;charset=utf8', 'root', 'DarkShot666');
+} catch (Exception $e) {
+    die('Erreur : '.$e->getMessage());
+};
+$req = $bdd->query('SELECT MAX(id) FROM produits');
 
 
 //  requête insert image
 $req = $bdd->prepare('INSERT INTO image(image, type, taille, id_produits)
 
-   VALUES(:image, :type, :taille, :id_produits)');
+$id_produits =  $req->fetchAll();
+
+
+$req = $bdd->prepare('INSERT INTO images(titre, id_produits) VALUES(:titre, :id_produits)');
 
 $req->execute(array(
 
-    'image' => $_FILES['monfichier']['name'],
+    'titre' => $titre,
+    'id_produits' => $id_produits[0][0]
+    ));
+    ?>
+<?php
 
-    'type' => $_FILES['monfichier']['type'],
+// Testons si le fichier a bien été envoyé et s'il n'y a pas d'erreur
 
-    'taille' => $_FILES['monfichier']['size'],
+if (isset($_FILES['monfichier']) and $_FILES['monfichier']['error'] == 0) {
+    // Testons si le fichier n'est pas trop gros
 
-    'id_produits' => $idLastProduct,
 
-   
-  ));
-
+    if ($_FILES['monfichier']['size'] <= 1000000) {
+        $infosfichier = pathinfo($_FILES['monfichier']['name']);
+        $extension_upload = $infosfichier['extension'];
+        $extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png');
 
 
   //redirection vers index.php "function"
 
 header('Location: index.php');
 
+        if (in_array($extension_upload, $extensions_autorisees)) {
+          // On peut valider le fichier et le stocker définitivement
+
+                        move_uploaded_file($_FILES['monfichier']['tmp_name'], 'img/' . basename($_FILES['monfichier']['name']));
+
+
+                        echo "L'envoi a bien été effectué !";
+        }
+    }
 }
-}
-
-
-
 ?>
-	
-
-<?php
-
-include 'footer.php';
- ?>

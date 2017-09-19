@@ -5,7 +5,7 @@
   // connection a la base de donnees
 try {
 
-  $bdd = new PDO('mysql:host=localhost;dbname=Ecommerce;charset=utf8', 'phpmyadmin', 'maD24101975');
+  $bdd = new PDO('mysql:host=localhost;dbname=E-Commerce;charset=utf8', 'root', 'DarkShot666');
 
 }
 catch (Exception $e)
@@ -29,9 +29,9 @@ if (isset($_POST["pseudo"]) AND isset($_POST["userPass"])) {
     header('refresh:1,espaceclient.php');
   }
  else  {
- 
+
  		# code...
- 	
+
  	$_SESSION['pseudo'] = $_POST['pseudo'];
  	$_SESSION['userPass']= $_POST['userPass'];
 

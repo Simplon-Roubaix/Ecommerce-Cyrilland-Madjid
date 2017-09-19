@@ -21,7 +21,7 @@ while ($donnees = $reponse->fetch()){
 
 		# code...
 
-	
+
 ?>
 
     <p>
@@ -30,12 +30,12 @@ while ($donnees = $reponse->fetch()){
 
     Le possesseur de ce jeu est : <?php echo $donnees['description']; ?>, et il le vend à <?php echo $donnees['prix']; ?> euros !<br />
 
-    Ce jeu fonctionne sur <?php echo $donnees['details']; ?> et on 
+    Ce jeu fonctionne sur <?php echo $donnees['details']; ?> et on
 
-    <?php echo $donnees['jeux']; ?> a laissé ces commentaires sur 
+    <?php echo $donnees['jeux']; ?> a laissé ces commentaires sur
 
    </p>
-<?php  
+<?php
 
 
 
