@@ -2,8 +2,8 @@
 session_start();
       // <!--  start header -->
 
-        include "header.php";
-        include 'navbar.php';
+        include "vue/e-commerce/header.php";
+        include 'vue /e-commerce/navbar.php';
 ?>
 
 

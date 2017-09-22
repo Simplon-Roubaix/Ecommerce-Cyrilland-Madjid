@@ -1,6 +1,5 @@
-<?php 
-
-require "informations.php";
+<?php
+require "controleur/e-commerce/informations.php";
  ?>
 <!doctype html>
 <html class="no-js" lang="fr">
@@ -15,8 +14,6 @@ require "informations.php";
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
     <body>
@@ -30,12 +27,6 @@ require "informations.php";
 
           <h2 class="lead text-center"> <?php
             echo $info['description'];?>
-            <a href="espaceclient.php"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
-
-            <?php if(isset($_SESSION['pseudo'])){?>
-               <a href="ko.php"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
-           <?php }  ?> 
-            
           </h2>
 
           <hr class="my-4">

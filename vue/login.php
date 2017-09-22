@@ -1,5 +1,5 @@
 <?php
-include ('header.php');
+include ('vue/e-commerce/header.php');
  ?>
 
 <?php
@@ -13,7 +13,7 @@ include ('header.php');
 	<input type="number" name="prix" value="" placeholder="prix">
 	<input type="text" name="caracteristiques" value="" placeholder="caracteristiques">
 	<input type="text" name="resume" value="" placeholder="resume">
-	<?php include 'img_up.php'; ?>
+	<?php include 'vue/e-commerce/img_up.php'; ?>
 </form>
 <?php
 
@@ -21,5 +21,5 @@ include ('header.php');
 
 
 
-include 'footer.php';
+include 'vue/e-commerce/footer.php';
 ?>
