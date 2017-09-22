@@ -1,9 +1,9 @@
 
 <?php
-    require "informations.php" ;
-    require"description.php";
-        include "header.php";
-        include 'navbar.php';
+    require "contoleur/e-commerce/informations.php" ;
+    require"contoleur/e-commerce/description.php";
+        include "vue/e-commerce/header.php";
+        include 'vue/e-commerce/navbar.php';
        ?>
 
           <div class="container">
@@ -33,6 +33,6 @@
 
          <!-- start footer -->
         <?php
-          include "footer.php";
+          include "vue/e-commerce/footer.php";
          ?>
          <!-- end footer -->
