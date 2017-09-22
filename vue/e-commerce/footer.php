@@ -1,5 +1,5 @@
-<?php 
-require "informations.php";
+<?php
+require "controleur/e-commerce/informations.php";
  ?>
 
 <div class="jumbotron">
