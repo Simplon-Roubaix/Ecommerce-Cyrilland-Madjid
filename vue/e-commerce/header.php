@@ -27,6 +27,15 @@ require "controleur/e-commerce/informations.php";
 
           <h2 class="lead text-center"> <?php
             echo $info['description'];?>
+<<<<<<< HEAD:vue/e-commerce/header.php
+=======
+            <a href="espaceclient.php"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+
+            <?php if(isset($_SESSION['pseudo'])){?>
+               <a href="ko.php"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+           <?php }  ?>
+
+>>>>>>> 6c409db235782757244d9dbad79cab6c31b15213:header.php
           </h2>
 
           <hr class="my-4">
